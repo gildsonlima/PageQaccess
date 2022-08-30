@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body class="bd-example-cssgrid">
+	<header>
+		<nav class="navbar p-0 navbar-expand-lg ">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#"><img class="img-brand" src="img/Qacess.png" alt=""></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="container-fluid">
+			<div class="row page">
+				<div class="d-flex flex-column justify-content-between border-end p-3 bg-light col-2 d-none d-lg-flex d-xl-flex d-xxl-flex ">
+					<ul class="list-unstyled list-group ps-0 nav nav-pills mb-auto">
+						<li class="mb-1">
+							<button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+									<path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+									<path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+								</svg>
+								<span class="ps-2">Home</span>
+							</button>
+							<div class="collapse" id="home-collapse" style="">
+							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+								<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Overview</a></li>
+								<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Updates</a></li>
+								<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Reports</a></li>
+							</ul>
+							</div>
+						</li>
+						<li class="mb-1">
+							<button class="btn btn-correspondencia btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+									<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+								</svg>
+								<span class="ps-2">Encomendas</span>
+							</button>
+							<div class="collapse" id="dashboard-collapse">
+							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+								<li><a href="encomendas.html" class="link-dark d-inline-flex text-decoration-none rounded">Visão geral</a></li>
+								<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Entregues</a></li>
+								<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Entregues</a></li>
+							</ul>
+							</div>
+						</li>
+						<li class="mb-1">
+							<button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+									<path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+									<path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+									<path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+								</svg>
+								<span class="ps-2">Ocorrência</span>
+							</button>
+							<div class="collapse" id="orders-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="ocorrencia.html" class="link-dark d-inline-flex text-decoration-none rounded">Registrar ocorrência</a></li>
+                                    <li><a href="consulta.html" class="link-dark d-inline-flex text-decoration-none rounded">Consultar ocorrências</a></li>
+                                </ul>
+							</div>
+						</li>
+					</ul>
+					
+					<div class="dropdown">
+						<hr>
+						<a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+							<strong>Coisinho</strong>
+						</a>
+						<ul class="dropdown-menu text-small shadow">
+							<li><a class="dropdown-item" href="#">New project...</a></li>
+							<li><a class="dropdown-item" href="#">Settings</a></li>
+							<li><a class="dropdown-item" href="#">Profile</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-lg-10 p-3 cinza">
+
+
+					<div class="table-responsive-sm">
+						<hr>
+						<table class="table table-bordered">
+							<thead class="table-dark text-center">
+								<tr>
+									<th scope="col">Registrar ocorrência</th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+                    <div class="container mb-3 col-8">
+                        <label for="exampleFormControlInput1" class="form-label">Titulo </label>
+                        <input type="titulo" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    </div>
+
+                    <div class="container mb-3 col-8">
+                        <label for="exampleFormControlTextarea1" class="form-label">Descrição</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="container mb-3 col-8">
+                        <input class="form-control form-control-sm" id="formFileSm" type="file">
+                        <br>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+			</div>
+	</main>
+	<div class="container-fluid">
+		<footer class="d-flex flex-wrap justify-content-center align-items-center py-0 my-0 border-top">
+			<div class="col-md-4 d-flex align-items-center">
+			<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+				<img src="img/QacessLogo.png" alt="Logo do Qaccess" class="logo-footer">
+			</a>
+			<span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
