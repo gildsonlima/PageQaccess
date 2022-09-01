@@ -92,7 +92,7 @@
 				</div>
 				<!-- fim do menu lateral -->
 				<!-- inicio da area de renderização de paginas -->
-				<div class="col-12 col-lg-10 p-3 cinza">
+				<div class="col-12 col-lg-10 py-3 pb-0 cinza">
 					<div>
 						<div class="input-group mb-3">
 							<span class="input-group-text" id="basic-addon1">Pesquisa</span>
@@ -110,9 +110,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="table-responsive-sm">
-						<hr>
-						<table class="table table-bordered">
+					<!-- inicio da tabela de encomendas -->
+					<hr>
+					<div class="scrollarea table-responsive-sm ">
+						
+						<table class="table table-bordered" id="tabelaEncomenda">
 							<thead class="table-dark text-center">
 								<tr>
 									<th scope="col">Status</th>
@@ -124,7 +126,8 @@
 									</th>
 								</tr>
 							</thead>
-							<tbody>
+							<div>
+							<tbody id="corpoTabelaEncomenda">
 								<tr scope="row">
 									<td class="text-center">Entregue</td>
 									<td class="text-nowrap text-center">João Silva Sauro</td>
@@ -207,10 +210,13 @@
 								
 								
 							</tbody>
+						</div>
 						</table>
 					</div>
+					<!-- fim da tabela de encomenda -->
+					<!-- incio do botao e modal -->
 					<div class="d-grid d-md-flex my-5 me-5 justify-content-md-end position-absolute bottom-0 end-0">
-						<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Adicionar encomendas</button>
+						<button type="button" class="btn btn-primary" data-bs-toggle="modal" id="botaoAbrirModal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Adicionar encomendas</button>
 					</div>
 					<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 						<div class="modal-dialog">
@@ -222,26 +228,27 @@
 								<div class="modal-body">
 									<form>
 										<div class="input-group mb-3">
-											<span class="input-group-text" id="nomeRemetente">Remetente</span>
-											<input type="name" class="form-control" placeholder="Digite o nome"  aria-label="Nome remetente">
+											<span class="input-group-text">Remetente</span>
+											<input type="name" class="form-control" placeholder="Digite o nome" id="nomeRemetente" aria-label="Nome remetente">
 										</div>
 										<div class="input-group mb-3">
-											<span class="input-group-text" id="unidade">Unidade</span>
-											<input type="name" class="form-control" placeholder="Digite a unidade" aria-label="Nome remetente">
+											<span class="input-group-text">Unidade</span>
+											<input type="name" class="form-control" placeholder="Digite a unidade" id="unidade" aria-label="Nome remetente">
 										</div>
 										<div class="input-group mb-3">
-											<span class="input-group-text" id="codigo">Codigo</span>
-											<input type="name" class="form-control" placeholder="Digite o nome" aria-label="Nome remetente">
+											<span class="input-group-text">Codigo</span>
+											<input type="name" class="form-control" placeholder="Digite o Codigo" id="codigo" aria-label="Nome remetente">
 										</div>
 									</form>
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-									<button type="button" class="btn btn-primary">Salvar encomenda</button>
+									<button type="button" id="botaoSalvarEncomenda" class="btn btn-primary">Salvar encomenda</button>
 								</div>
 							</div>
 						</div>
 					</div>
+					<!-- fim do botao e modal -->
 				</div>
 				<!-- fim da area de renderização -->
 			</div>
@@ -256,6 +263,7 @@
 			</div>
 		</footer>
 	</div>
+	<script src="js/encomandas.js" ></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

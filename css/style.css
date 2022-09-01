@@ -1,6 +1,12 @@
+html{
+    overflow-y: hidden;
+}
 .navbar{
 background-color: #339CE9;
 
+}
+.page{
+    height: 90vh;
 }
 footer{
     margin-top: 0px;
@@ -10,16 +16,17 @@ footer{
     height: 2vh;
 }
 
-
-.page{
-    height: 90vh;
-}
 .img-brand{
-height: 5vh;
+    height: 5vh;
 }
 
 .titulo-botao{
     padding-left: 5px;
+}
+
+.scrollarea{
+    overflow-y: scroll;
+    height: 55vh;
 }
 
 
