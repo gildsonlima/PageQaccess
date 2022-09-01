@@ -5,7 +5,11 @@ const codigo = document.querySelector('#codigo');
 const unidade = document.querySelector('#unidade');
 
 botaoSalvar.addEventListener('click', () => {
-    criarLinha(nome,codigo,unidade);
+    if(nome.value != "" && codigo.value != "" && unidade.value != ""){
+        criarLinha(nome,codigo,unidade);
+    }else{
+        alert("Você precisa preencher todos os campos")
+    }
 });
 
 
@@ -37,6 +41,7 @@ botaoEntregar.innerHTML = [
     '<path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>',
     '</svg>'
 ]
+
 let botaoEditar = document.createElement("a");
 botaoEditar.setAttribute('href','');
 botaoEditar.innerHTML = [
@@ -45,6 +50,7 @@ botaoEditar.innerHTML = [
     '<path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>',
     '</svg>'
 ]
+
 let botaoExcluir = document.createElement("a");
 botaoExcluir.setAttribute('href','');
 botaoExcluir.innerHTML = [
@@ -66,4 +72,18 @@ linha.appendChild(coluna5)
 
 corpoTabela.appendChild(linha)
 
+limparCampos();
+
+}
+
+function limparCampos(){
+
+    nome.value = "";
+    codigo.value = "";
+    unidade.value = "";
+
+}
+
+function excluirLinha(){
+    
 }
