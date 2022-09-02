@@ -13,12 +13,46 @@
 		<nav class="navbar p-0 navbar-expand-lg ">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#"><img class="img-brand" src="img/Qacess.png" alt=""></a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				
 			</div>
+			<!-- inicio do OffCanvas -->
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body d-lg-none d-xl-none d-xxl-none">
+					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="/">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/encomendas.html">Encomendas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/ocorrencia.html">Ocorrencia</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Login
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Login</a></li>
+								<li><a class="dropdown-item" href="#">Conta</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="#"></a></li>
+							</ul>
+						</li>
+					</ul>
+					
+				</div>
+			<!-- fim do OffCanvas -->
 		</nav>
+		<!--  -->
 	</header>
 	<main>
 		<div class="container-fluid">

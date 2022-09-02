@@ -29,6 +29,11 @@ footer{
     height: 55vh;
 }
 
+.imgMural{
+    height: 80vh;
+    overflow: hidden;
+}
+
 
 .dropdown-toggle { outline: 0; }
 
